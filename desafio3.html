@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Desafio 3</title>
+</head>
+<body>
+<button id="boton1">Mostrar texto</button>
+<button id="boton2">Cambiar color</button>
+<p id="texto" style="display: none;">Hola mundo</p>
+
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+    $('#boton1').click(function() {
+        var elem = $('#texto');
+        elem.show();
+        $('#boton2').click(function() {
+            elem.css('color', 'red'); 
+        });
+    });
+});
+</script>
+</body>
+</html>

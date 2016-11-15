@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Desafio 3</title>
+</head>
+<body>
+<button id="boton1">Enviar</button>
+
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+    $('#boton1').click(function() {
+        $.get("desafio4.php", function(data, status){
+            alert("Data: " + data + "\nStatus: " + status);
+        });
+    });
+});
+</script>
+</body>
+</html>

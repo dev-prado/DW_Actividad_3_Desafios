@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Desafio 1</title>
+</head>
+<body>
+<button id="boton1">Mostrar texto</button>
+<button id="boton2">Cambiar color</button>
+<p id="texto"></p>
+
+<script>
+document.getElementById("boton1").addEventListener("click", mostrar);
+document.getElementById("boton2").addEventListener("click", cambiarColor);
+    
+function mostrar() {
+    document.getElementById("texto").innerHTML = "Hola mundo"
+}
+    
+function cambiarColor() {
+    document.getElementById("texto").setAttribute("style", "color: red;");
+}
+</script>
+</body>
+</html>
